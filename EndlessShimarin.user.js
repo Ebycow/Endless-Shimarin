@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Endless Shimarin
 // @namespace    https://ebycow.net/
-// @version      0.2
+// @version      0.3
 // @description  ＼ｱﾂｲ／
 // @author       Ebycow <https://ebycow.net>
 // @match        https?://animestore.docomo.ne.jp/animestore/sc_d_pc?partId=*
@@ -31,7 +31,7 @@ function getPartId() {
                 // 再生終了判定
                 if($("#seekBar").css("transform").split('(')[1].toString().split(')')[0].split(",")[0] == 1){
                     // 二期一話に移動
-                    playExec("24435001", null, null, "0")
+                    location.href = "?partId="+ "24435001" +"&startPosition=" + "0"
 
                 }
             }
@@ -41,7 +41,7 @@ function getPartId() {
                 // 再生終了判定
                 if($("#seekBar").css("transform").split('(')[1].toString().split(')')[0].split(",")[0] == 1){
                     // 一期一話に移動
-                    playExec("21928001", null, null, "0")
+                    location.href = "?partId="+ "21928001" +"&startPosition=" + "0"
 
                 }
 
