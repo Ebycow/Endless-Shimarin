@@ -1,6 +1,10 @@
 # Endless-Shimarin
 dアニメストアで無限にしまりん可能なユーザスクリプト
 
+# 機能
+* ゆるキャン△一期最終話が終了した際にゆるキャン△二期へ自動的に移動します
+* ゆるキャン△二期最終話が終了した際にゆるキャン△一期へ自動的に移動します
+
 # 導入しちった
 [TamperMonkey](https://www.tampermonkey.net/) をインストールした後、 https://github.com/Ebycow/Endless-Shimarin/raw/main/EndlessShimarin.user.js を開いて下さい。 
 
