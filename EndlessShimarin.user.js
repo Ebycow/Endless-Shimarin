@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Endless Shimarin
 // @namespace    https://ebycow.net/
-// @version      0.4
+// @version      0.5
 // @description  ＼ｱﾂｲ／
 // @author       Ebycow <https://ebycow.net>
 // @match        *://animestore.docomo.ne.jp/animestore/sc_d_pc?partId=*
@@ -29,7 +29,7 @@ function getPartId() {
             // ゆるキャン△一期最終話
             if(getPartId() == "21928012"){
                 // 再生終了判定
-                if($("#seekBar").css("transform").split('(')[1].toString().split(')')[0].split(",")[0] == 1){
+                if(changeStartPositionToMillisecond($("#time").text().replace(":", "m") + "s") == 0){
                     // 二期一話に移動
                     location.href = "?partId="+ "24435001" +"&startPosition=" + "0"
 
@@ -39,7 +39,7 @@ function getPartId() {
             // ゆるキャン△二期最終話
             if(getPartId() == "24435013"){
                 // 再生終了判定
-                if($("#seekBar").css("transform").split('(')[1].toString().split(')')[0].split(",")[0] == 1){
+                if(changeStartPositionToMillisecond($("#time").text().replace(":", "m") + "s") == 0){
                     // 一期一話に移動
                     location.href = "?partId="+ "21928001" +"&startPosition=" + "0"
 
