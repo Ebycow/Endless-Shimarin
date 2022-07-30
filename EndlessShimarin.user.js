@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Endless Shimarin
 // @namespace    https://ebycow.net/
-// @version      0.3
+// @version      0.4
 // @description  ＼ｱﾂｲ／
 // @author       Ebycow <https://ebycow.net>
-// @match        https?://animestore.docomo.ne.jp/animestore/sc_d_pc?partId=*
+// @match        *://animestore.docomo.ne.jp/animestore/sc_d_pc?partId=*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=docomo.ne.jp
 // @grant        none
 // ==/UserScript==
